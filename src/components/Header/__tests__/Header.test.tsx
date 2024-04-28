@@ -24,7 +24,7 @@ describe('Teste para o componente header', () => {
               titulo: 'Dark Souls III'
             },
             {
-              id: 1,
+              id: 2,
               categoria: 'RPG de turno',
               imagem: '',
               plataformas: ['nintendo'],
