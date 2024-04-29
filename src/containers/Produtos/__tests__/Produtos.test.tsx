@@ -64,8 +64,9 @@ describe('Teste para o container Produtos', () => {
   })
 
   test('Deve renderizar corretamente com a lsitagem de jogos', async () => {
-    renderizaComProvider(<Produtos />)
+    const { debug } = renderizaComProvider(<Produtos />)
     await waitFor(() => {
+      debug()
       expect(screen.getByText('Dark Souls')).toBeInTheDocument()
     })
   })
